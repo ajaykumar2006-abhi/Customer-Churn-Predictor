@@ -1,0 +1,167 @@
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: 100vh;
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  border-radius: 12px;
+}
+
+.header .logo {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.header p {
+  margin: 0.25rem 0 0;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.card,
+.info-card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h2,
+.info-card h3 {
+  margin-top: 0;
+  color: #f97316;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.875rem;
+  color: #cbd5e1;
+}
+
+input,
+select {
+  padding: 0.6rem 0.75rem;
+  background: #0f172a;
+  border: 1px solid #475569;
+  border-radius: 8px;
+  color: #f8fafc;
+  font-size: 0.95rem;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #f97316;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #f97316;
+  color: #0b1120;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover:not(:disabled) {
+  background: #fb923c;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-top: 1rem;
+  color: #fca5a5;
+}
+
+.result {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 10px;
+}
+
+.result.high {
+  background: rgba(239, 68, 68, 0.12);
+  border: 1px solid #ef4444;
+}
+
+.result.medium {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid #f59e0b;
+}
+
+.result.low {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid #10b981;
+}
+
+.result-icon {
+  font-size: 2rem;
+}
+
+.result-body h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.result-body p {
+  margin: 0.5rem 0 0;
+  color: #cbd5e1;
+}
+
+.result .meta {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.meter {
+  height: 10px;
+  background: #0f172a;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.meter-fill {
+  height: 100%;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.result.high .meter-fill { background: #ef4444; }
+.result.medium .meter-fill { background: #f59e0b; }
+.result.low .meter-fill { background: #10b981; }
+
+.info-card p {
+  color: #94a3b8;
+  line-height: 1.65;
+}
